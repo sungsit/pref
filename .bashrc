@@ -5,5 +5,9 @@ export BROWSER=firefox
 # Gtk themes 
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 
-alias ls='ls --color=auto'
 #[ ! "$UID" = "0" ] && archbey2
+
+# aliases
+alias ls='ls -H --color=auto'
+alias ll='ls -alh'
+alias lt='ll -t'
