@@ -1,6 +1,6 @@
 [submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+    path = .vim/bundle/nerdtree
+    url = https://github.com/scrooloose/nerdtree.git
 [submodule ".themes/Boonux"]
-	path = .themes/Boonux
-	url = https://github.com/sungsit/Boonux.git
+    path = .themes/Boonux
+    url = https://github.com/sungsit/Boonux.git

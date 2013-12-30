@@ -1,4 +1,4 @@
-" Softtabs, 2 spaces
+" Softtabs, 4 spaces
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -12,29 +12,29 @@ set numberwidth=5
 
 " For better unicode handling
 if has("multi_byte")
-  if &termencoding == ""
-    let &termencoding = &encoding
-  endif
-  set encoding=utf-8
-  setglobal fileencoding=utf-8
-  "setglobal bomb
-  set fileencodings=ucs-bom,utf-8,latin1
+    if &termencoding == ""
+        let &termencoding = &encoding
+    endif
+    set encoding=utf-8
+    setglobal fileencoding=utf-8
+    "setglobal bomb
+    set fileencodings=ucs-bom,utf-8,latin1
 endif
 
-"Pathogen
+" Pathogen
 execute pathogen#infect()
 syntax on
 "filetype plugin indent on
 
-"NERDTree 
+" NERDTree 
 "auto open & close
 autocmd vimenter * if !argc() | NERDTree | endif
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 nmap <C-X> :NERDTreeToggle<CR>
 
-"Auto change to current file dir
+" Auto change to current file dir
 set autochdir
 
-"Use mouse
+" Use mouse
 "set mouse=a
 
